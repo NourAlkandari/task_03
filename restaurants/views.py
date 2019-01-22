@@ -15,6 +15,10 @@ def restaurant_list(request):
     {
     'restaurant_name':'pizza',
     'food_type':'italy'
+    },
+    {
+    'restaurant_name':'aspro',
+    'food_type':'cofee shop'
     }
 
 

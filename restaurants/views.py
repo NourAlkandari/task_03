@@ -6,6 +6,19 @@ def welcome(request):
 def restaurant_list(request):
 
     context = {
+    'my_list': [
+    {
+    'restaurant_name':'cupcake',
+    'food_type':'bakery'
+
+    },
+    {
+    'restaurant_name':'pizza',
+    'food_type':'italy'
+    }
+
+
+    ]
 
     }
     return render(request, 'list.html', context)
@@ -13,7 +26,11 @@ def restaurant_list(request):
 
 def restaurant_detail(request):
 
-    context = {
+    context = { 
+    'my_object' : {
+    'restaurant_name': 'Melenzane',
+    'food_type':'italiano'
+    }
 
     }
     return render(request, 'detail.html', context)
